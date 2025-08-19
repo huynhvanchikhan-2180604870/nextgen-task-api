@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import express from "express";
 import morgan from "morgan";
 
-import { connectDB } from "./src/config/db.js";
+import { connectDB } from "./src/config/db.config.js";
 import { errorHandler, notFound } from "./src/middleware/error.js";
 import authRoutes from "./src/routes/auth.router.js";
 import projectRoutes from "./src/routes/projects.router.js";
